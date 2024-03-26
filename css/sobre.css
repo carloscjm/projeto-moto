@@ -1,0 +1,110 @@
+/* Estilo geral */
+
+body {
+    font-family: sans-serif;
+  }
+  
+  /* Menu */
+  
+  .menu {
+    background-color: #000000;
+    padding: 20px;
+    width: auto;
+    margin: 0px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Botões do menu */
+  
+  .botao-menu {
+    background-color: #333;
+    color: #fff;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.2s;
+  }
+  
+  .botao-menu:hover {
+    background-color: #444;
+  }
+  
+  .botao-menu:active {
+    background-color: #555;
+  }
+
+  #batatinha{
+    float: left;
+    height: 300px;
+    width: 400px;
+}
+
+#textto1{
+    position: absolute;
+    left: 400px;
+}
+
+#texto1{
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+#entrar{
+    position: absolute;
+    right: 20px;
+}
+
+#logar{
+    position: absolute;
+    right: 80px;
+}
+
+#text2{
+    position: absolute;
+    left: 400px;
+}
+
+#asfalto{
+    float: left;
+    height: 300px;
+    width: 400px;
+}
+
+#texto3{
+    position: absolute;
+    left: 400px;
+}
+
+#trilha{
+    float: left;
+    height: 300px;
+    width: 400px;
+}
+
+.barra-pesquisa {
+    width: 1020px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
