@@ -1,0 +1,40 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgray;
+}
+
+.tela-login{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: black;
+}
+
+button:hover{
+    background-color: gray;
+    cursor: pointer;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+}
