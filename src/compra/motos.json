@@ -1,0 +1,10 @@
+{
+    "nome_moto": "CB 300",
+    "desc_moto": "A CB 300F",
+    "ficha": {
+        "motor": "Tipo: OHC, monocilíndrico, 4 tempos, arrefecido a ar. Cilindrada: 293,5 cc Potência Máxima: 24,5 CV a 7.500 rpm (gasolina) / 24,7 CV a 7.500 rpm (etanol) Torque Máximo: 2,61 kgf.m a 5.500 rpm (gasolina) / 2,67 kgf.m a 5.500 (etanol) Transmissão: 6 velocidades Sistema de Partida: Elétrica Diâmetro x Curso: 77,0 x 63,0 mm",
+        "sistema_eletrico": "Ignição: Eletrônica Bateria: 12V 5 Ah Farol: LED Sistema Eletrico",
+        "dimensoes": "Comprimento x Largura x Altura: 2084 x 755 x 1075 mm Distância entre eixos: 1390 mm Distância mínima do solo: 177 mm Altura do assento: 789 mm Peso Seco: 139 kg (ABS / CBS)",
+        "chassi": "Tipo: Diamond Frame Suspensão Dianteira/Curso: Garfo telescópico / 130 mm Suspensão Traseira/Curso: Monoamortecida / 120 mm Freio Dianteiro/Diâmetro: A disco / 276 mm Freio Traseiro/Diâmetro: A disco / 220 mm Pneu Dianteiro: 110/7017” Pneu Traseiro: 150/60 17”"
+    }
+}

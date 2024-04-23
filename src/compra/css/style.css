@@ -142,21 +142,28 @@
     }
 
     .back {
-        background-color: yellow;
         width: 85%;
         height: 650px;
         position:absolute;
         top: 0px;
         left: 7%;
         right: 7%;        
-        margin-top: 180px;
+        margin-top: 200px;
+        border-radius: 30px;
+        padding: 2px;
+        
     }
 
-    .img {
-        background-color: red;
-        width: 50%;
-        height: 100%;
+    .venda{
+      position: absolute;
+      height: 600px;
+      width: 650px;
+      margin-left: 55%;
+      top: 0px;
+      border-radius: 40px;
+      background-color: rgba(68, 68, 68, 0.034);
     }
+
 
     .comp {
         position: absolute;
@@ -164,25 +171,23 @@
         top: 0px;
         width: 40%;
         height: 100%;
-        background-color: blue;
     }
 
     .espc {
         position: absolute;
-        background-color: purple;
-        width: 100%;
-        height: 100px;
+        width: 80%;
+        height: 70px;
         top: 830px;
-        left: 0px;
+        left: 190px;
         align-items: center;
         text-align: center;
+        background-color: #615f5f38;
     }
 
     .descriçao {
         position: absolute;
-        background-color: green;
         width: 100%;
-        height: 700px;
+        height: 410px;
         top: 930px;
         left: 0px;
     }
@@ -192,7 +197,8 @@
         height: 400px;
         width: 80%;
         margin-left: 10%;
-        background-color:aqua;
+        background-color:rgb(218, 218, 218);
+        border-radius: 20px;
         
     }
     #b1 {
@@ -204,6 +210,7 @@
         height: 370px;
         width: 266px;
         font-size: larger;
+        border-radius: 20px;
           
     }
 
@@ -216,6 +223,7 @@
         height: 370px;
         width: 266px;
         font-size: larger;
+        border-radius: 20px;
     }
 
     #b3 {
@@ -227,6 +235,7 @@
         height: 370px;
         width: 266px;
         font-size: larger;
+        border-radius: 20px;
     }
 
     #b4 {
@@ -238,6 +247,7 @@
         height: 370px;
         width: 266px;
         font-size: larger;
+        border-radius: 20px;
     }
 
     #b5 {
@@ -249,15 +259,7 @@
         height: 370px;
         width: 266px;
         font-size: larger;
-    }
-
-    .inform{
-        position:absolute;
-        width: 740px;
-        height: 290px;
-        background-color: red;
-        margin-left: 20%;
-        margin-top: 100px;
+        border-radius: 20px;
     }
 
     #b1:hover {
@@ -355,7 +357,7 @@
         width: 100%;
         position: absolute;
         left: 0;
-        margin-top: 100%;
+        margin-top: 1150px;
       }
       
       footer {
@@ -365,12 +367,147 @@
         margin: 40px auto;
       }
       
+.slider{
+  margin-top: 50px;
+  width: 860px;
+  height: 550px;
+  overflow: hidden;
+}
 
-      #moto {
-        display: flex;
-        background-color: rgb(0, 255, 85);
-        height: 600px;
-        width: 850px;
-        margin-top: 25px;
-  
-      }
+.slides{
+  width: 400%;
+  height: 550px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+}
+
+.slide img{
+  width: 960px;
+  height: 550px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .05s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+.navigation-auto div{
+  border: 2px solid #2f2f2f;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .05;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 510px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #fff;
+}
+
+.nome{
+  display: flex;
+  margin-top: 80px;
+  justify-content: center; 
+}
+
+.nome h1{
+  color: black;
+  font-size: 52px;
+}
+
+.venda h2{
+  display: flex;
+  margin-top: 160px;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+
+.venda h3{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #615f5f;
+
+}
+
+.venda #p1{
+  display: flex;
+  margin-top: 90px;
+  font-size: 40px;
+  background-color: red;
+  margin-left: 130px;
+  border-radius: 20px;
+}
+
+.venda #btn-comp{
+  background-color: black;
+  margin-left: 260px;
+  border-radius: 20px;
+  height: 60px;
+  width: 150px;;
+  font-size: 30px;
+}
+
