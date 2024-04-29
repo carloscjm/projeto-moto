@@ -1,6 +1,20 @@
 var slideIndex = 1;
 $(document).ready(function() {
     showSlides(slideIndex);
+    let logado = localStorage.getItem('logado');
+    if (logado) {
+          $('.login').css('display', 'none');
+          $('.logout').css('display', 'block');
+    } else {
+      $('.login').css('display', 'block');
+      $('.logout').css('display', 'none');
+    }
+
+    // Adicionando ação ao clicar no botão usando jQuery
+  $('.logout').click(function() {
+    localStorage.setItem('logado', false);
+    window.location.href = 'src/login/login.html';
+  });
 });
 
 

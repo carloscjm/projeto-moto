@@ -11,7 +11,7 @@ $('#acao-login').click(function() {
 
 $(document).ready(function() {
     let logado = localStorage.getItem('logado');
-    if (logado) {
+    if (logado && logado=='true') {
         $('#msg-logado').css('display', 'block');
         setTimeout(function() {
             window.location.href = '../../index.html';
