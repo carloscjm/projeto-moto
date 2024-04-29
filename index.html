@@ -4,26 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/css/style.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="src/assets/js/home.js"></script>
+    <link rel="icon" type="image/png" href="src/assets/img/logo.png">
     <title>Motoca</title>
 </head>
 <html>  
     <body>
         <div class="Menu">
             <div class="botoes">
-                <a href="index.html"><button onclick="window.location.href='compra.html'" class="botao1"> Pagina Inicial </button></a>
-                <a href="sobre_nos.html"><button class="botao2"> Sobre </button></a>
-                <button onclick="window.location.href='https://www.google.com/'" class="botao3">Contato</button>
-
-                    <div class="pesquisar">
-                        <form>
-                            <input type="text" name="pesquisa" placeholder="Barra so por enfeite, nao tivemos verba para continuar">
-                            <button type="submit">Pesquisar</button>
-                        </form>
-                    </div>
-                <button class="botao4"> carrinho </button>
-                <button class="botao5"> Register </button>
-                <a href="src/login/login.html"><button class="botao6"> Login </button></a>
+                <img src="src/assets/img/logo.png" style="margin-right: 42px;width: 79px;">
+                <button onclick="window.location.href='index.html'" class="botao1"> Pagina Inicial </button>
+                <button onclick="window.location.href='src/sobre_nos/sobre_nos.html'" class="botao1"> Sobre </button>
+                <button onclick="window.location.href='https://www.google.com/'" class="botao1">Contato</button>
+                <button onclick="window.location.href='https://www.google.com/'" class="botao1">Meu Carrinho</button>
             </div>
+            <div style="display: flex;">
+                <div class="pesquisar">
+                    <form>
+                        <input type="text" name="pesquisa" placeholder="Pesquisar">
+                        <!-- <button type="submit">Pesquisar</button> -->
+                    </form>
+                </div>
+                <button onclick="window.location.href='src/login/login.html'" class="botao1">Login</button>
+                <button onclick="window.location.href='https://www.google.com/'" class="botao1">Cadastre-se</button>
+                <!-- <a href="src/login/login.html"><button class="botao6"> Login </button></a> -->
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="src/assets/img/banner1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="src/assets/img/banner2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="src/assets/img/banner3.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
         <h1 class="titulo"> Modelos</h1>
             <div class="linha">
@@ -34,17 +65,17 @@
         <div class="produtos1">
             <button class="produto11">
                 <img id="moto" src="src/assets/img/asfalto.png" alt="cb 300f">
-                <span>CB 300F Twister</span>
+                <a href="src/compra/Compra.html?moto=1"><span> CB 300F Twister</span></a>
             </button>
             
             <button class="produto12">
                 <img id="moto" src="src/assets/img/160.png" alt="160">
-                <a href="src/pagina_compra/160.html"><span>    CG 160 Titan</span></a>
+                <a href="src/compra/Compra.html?moto=2"><span> CG 160 Titan</span></a>
             </button>
 
             <button class="produto13">
                 <img id="moto" src="src/assets/img/cb500.png" alt="cb1000">
-                <a href="src/pagina_compra/cb500.html"><span>        CB 500F</span></a>
+                <a href="src/compra/Compra.html?moto=3"><span> CB 500F</span></a>
             </button>
     
         </div>
@@ -93,7 +124,11 @@
         </div>
 
         <div class="rodape">
-            <footer>Sua motinha faz ran dan dan dan</footer>
+            <footer style="width: 100%; font-size: 11px;
+            text-align: center;">
+                <div>RAZÃO SOCIAL YAMAHA MOTOR DO BRASIL LTDA
+                    Estrada Velha de Itu, 1045, lado A – Setor 1 | Jardim Alvorada - Jandira/SP CEP 06612-250 CNPJ 62.934.252/0004-98</div>
+                Sua motinha faz ran dan dan dan</footer>
         </div>
     
     </body>

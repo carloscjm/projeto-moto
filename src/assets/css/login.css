@@ -38,3 +38,15 @@ button:hover{
 a{
     text-decoration: none;
 }
+#erro-login{
+    color: red;
+    background-color: #ef580045;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#msg-logado{
+    background-color: #4bff0045;
+    text-align: center;
+    border-radius: 5px;
+}
